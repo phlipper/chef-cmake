@@ -30,6 +30,14 @@ None
 None
 
 
+## Contributors
+
+Many thanks go to the following [contributors](https://github.com/phlipper/chef-percona/graphs/contributors) who have helped to make this cookbook even better:
+
+* **[@pfalcone](https://github.com/pfalcone)**
+    * add support for Red Hat-based distributions
+
+
 ## Contributing
 
 1. Fork it
@@ -43,6 +51,6 @@ None
 
 **chef-cmake**
 
-* Freely distributable and licensed under the [MIT license](http://phlipper.mit-license.org/2012/license.html).
-* Copyright (c) 2012 Phil Cohen (github@phlippers.net) [![endorse](http://api.coderwall.com/phlipper/endorsecount.png)](http://coderwall.com/phlipper)
+* Freely distributable and licensed under the [MIT license](http://phlipper.mit-license.org/2012-2013/license.html).
+* Copyright (c) 2012-2013 Phil Cohen (github@phlippers.net) [![endorse](http://api.coderwall.com/phlipper/endorsecount.png)](http://coderwall.com/phlipper)
 * http://phlippers.net/

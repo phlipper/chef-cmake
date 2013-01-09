@@ -32,7 +32,7 @@ None
 
 ## Contributors
 
-Many thanks go to the following [contributors](https://github.com/phlipper/chef-percona/graphs/contributors) who have helped to make this cookbook even better:
+Many thanks go to the following [contributors](https://github.com/phlipper/chef-cmake/graphs/contributors) who have helped to make this cookbook even better:
 
 * **[@pfalcone](https://github.com/pfalcone)**
     * add support for Red Hat-based distributions

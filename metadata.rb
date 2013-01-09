@@ -3,7 +3,7 @@ maintainer        "Phil Cohen"
 maintainer_email  "github@phlippers.net"
 license           "MIT"
 description       "Install cmake"
-version           "0.1.0"
+version           "0.2.0"
 
 recipe "default", "Install default cmake support"
 

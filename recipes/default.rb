@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 
-if node[:from_source] then
+if node[:cmake][:from_source] then
   include_recipe "from_source.rb"
 else
   case node[:platform]

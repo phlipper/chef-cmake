@@ -6,7 +6,6 @@ remote_file "#{Chef::Config[:file_cache_path]}/#{cmake_filename}" do
   source "http://www.cmake.org/files/v#{node[:cmake][:version][:major]}.#{node[:cmake][:version][:minor]}/#{cmake_filename}"
   action :create_if_missing
   mode 0644
-  notifies :run, "extract", :delayed
 end
 
 execute "tar --no-same-owner -zxf #{Chef::Config[:file_cache_path]}/#{cmake_filename}" do

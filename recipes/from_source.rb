@@ -1,3 +1,4 @@
+include_recipe "build-essential"
 
 cmake_dirname = "cmake-#{node[:cmake][:version][:major]}.#{node[:cmake][:version][:minor]}.#{node[:cmake][:version][:fix]}.#{node[:cmake][:version][:build]}"
 cmake_filename = "#{cmake_dirname}.tar.gz"

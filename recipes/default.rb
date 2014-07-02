@@ -4,7 +4,7 @@
 #
 
 if node[:cmake][:from_source] then
-  include_recipe "from_source.rb"
+  include_recipe "cmake::from_source"
 else
   case node[:platform]
   when "centos","fedora","redhat"

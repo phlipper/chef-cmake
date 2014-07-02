@@ -3,9 +3,13 @@
 # Recipe:: default
 #
 
-case node[:platform]
-when "centos","fedora","redhat"
-  package "cmake28"
-when "ubuntu","debian"
-  package "cmake"
+if node[:from_source] then
+  include_recipe "from_source.rb"
+else
+  case node[:platform]
+  when "centos","fedora","redhat"
+    package "cmake28"
+  when "ubuntu","debian"
+    package "cmake"
+  end
 end

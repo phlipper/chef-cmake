@@ -9,6 +9,7 @@ recipe "default", "Install default cmake support"
 
 %w{ build-essential }.each do |dependency|
   depends dependency
+end
 
 %w{ debian ubuntu redhat centos fedora }.each do |os|
   supports os

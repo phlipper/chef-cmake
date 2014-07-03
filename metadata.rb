@@ -3,9 +3,13 @@ maintainer        "Phil Cohen"
 maintainer_email  "github@phlippers.net"
 license           "MIT"
 description       "Install cmake"
-version           "0.2.0"
+version           "0.3.0"
 
 recipe "default", "Install default cmake support"
+
+%w{ build-essential }.each do |dependency|
+  depends dependency
+end
 
 %w{ debian ubuntu redhat centos fedora }.each do |os|
   supports os

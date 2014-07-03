@@ -3,9 +3,4 @@
 # Recipe:: default
 #
 
-case node[:platform]
-when "centos","fedora","redhat"
-  package "cmake28"
-when "ubuntu","debian"
-  package "cmake"
-end
+include_recipe "cmake::from_#{node[:cmake][:install_method]}"

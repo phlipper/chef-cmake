@@ -22,7 +22,11 @@ This cookbook installs the cmake components if not present, and pulls updates if
 
 # ATTRIBUTES
 
-None
+* cmake\['install_method'\] = *source* or *package* default is **package**
+* cmake\['version'\] \['major'\] (only used if install_method is source)
+* cmake\['version'\] \['minfor'\] (only used if install_method is source)
+* cmake\['version'\] \['fix'\] (only used if install_method is source)
+* cmake\['version'\] \['build'\] (only used if install_method is source)
 
 
 ## Basic Settings

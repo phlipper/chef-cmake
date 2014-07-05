@@ -1,41 +1,52 @@
-# DESCRIPTION
+# chef-cmake [![Build Status](http://img.shields.io/travis-ci/phlipper/chef-cmake.png)](https://travis-ci.org/phlipper/chef-cmake)
+
+## Description
 
 Installs [cmake](http://www.cmake.org/), the cross-platform, open-source build system.
 
 
-# REQUIREMENTS
+## Requirements
 
-## Supported Platforms
+### Supported Platforms
 
-The following platforms are supported by this cookbook, meaning that the recipes run on these platforms without error:
+The following platforms are supported by this cookbook, meaning that the
+recipes should run on these platforms without error:
 
-* Ubuntu/Debian
-* Fedora/CentOS/RedHat Enterprise Linux
+* Ubuntu 12.04+
+* Debian 6.0.8+
+* CentOS/RedHat 6+
+* Fedora 20+
 
-# RECIPES
+### Cookbooks
 
-* `cmake`,         Default recipe
+_None_
 
-# USAGE
+### Chef
+
+It is recommended to use a version of Chef `>= 10.16.4` as that is the target of my usage and testing, though this should work with most recent versions.
+
+### Ruby
+
+This cookbook requires Ruby 1.9+ and is tested against:
+
+* 1.9.3
+* 2.0.0
+* 2.1.2
+
+
+## Recipes
+
+* `cmake::default` - The default recipe which installs the package.
+
+
+## Usage
 
 This cookbook installs the cmake components if not present, and pulls updates if they are installed on the system.
 
-# ATTRIBUTES
 
-None
+## Attributes
 
-
-## Basic Settings
-
-None
-
-
-## Contributors
-
-Many thanks go to the following [contributors](https://github.com/phlipper/chef-cmake/graphs/contributors) who have helped to make this cookbook even better:
-
-* **[@pfalcone](https://github.com/pfalcone)**
-    * add support for Red Hat-based distributions
+_None_
 
 
 ## Contributing
@@ -47,10 +58,18 @@ Many thanks go to the following [contributors](https://github.com/phlipper/chef-
 5. Create new Pull Request
 
 
+## Contributors
+
+Many thanks go to the following [contributors](https://github.com/phlipper/chef-cmake/graphs/contributors) who have helped to make this cookbook even better:
+
+* **[@pfalcone](https://github.com/pfalcone)**
+    * add initial support for RedHat-based distributions
+
+
 ## License
 
 **chef-cmake**
 
-* Freely distributable and licensed under the [MIT license](http://phlipper.mit-license.org/2012-2013/license.html).
-* Copyright (c) 2012-2013 Phil Cohen (github@phlippers.net) [![endorse](http://api.coderwall.com/phlipper/endorsecount.png)](http://coderwall.com/phlipper)
+* Freely distributable and licensed under the [MIT license](http://phlipper.mit-license.org/2012-2014/license.html).
+* Copyright (c) 2012-2014 Phil Cohen (github@phlippers.net) [![endorse](http://api.coderwall.com/phlipper/endorsecount.png)](http://coderwall.com/phlipper) [![Gittip](http://img.shields.io/gittip/phlipper.png)](https://www.gittip.com/phlipper/)
 * http://phlippers.net/

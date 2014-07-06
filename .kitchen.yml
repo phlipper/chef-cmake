@@ -8,7 +8,11 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
+    run_list:
+      - recipe[apt]
   - name: ubuntu-14.04
+    run_list:
+      - recipe[apt]
   - name: centos-6.5
   - name: fedora-20
 
@@ -16,3 +20,12 @@ suites:
   - name: default
     run_list:
       - recipe[cmake]
+  - name: source
+    run_list:
+      - recipe[build-essential]
+      - recipe[cmake]
+    attributes:
+      cmake:
+        install_method: source
+        source:
+          version: 2.8.12.2

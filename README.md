@@ -19,7 +19,7 @@ recipes should run on these platforms without error:
 
 ### Cookbooks
 
-_None_
+* [build-essential](http://community.opscode.com/cookbooks/build-essential) _(used for source install)_
 
 ### Chef
 
@@ -46,7 +46,12 @@ This cookbook installs the cmake components if not present, and pulls updates if
 
 ## Attributes
 
-_None_
+```ruby
+default["cmake"]["install_method"] = "package" # `package` or `source`
+
+default["cmake"]["source"]["version"] = "2.8.12.2"
+default["cmake"]["source"]["checksum"] = "8c6574e9afabcb9fc66f463bb1f2f051958d86c85c37fccf067eb1a44a120e5e"
+```
 
 
 ## Contributing
@@ -64,6 +69,8 @@ Many thanks go to the following [contributors](https://github.com/phlipper/chef-
 
 * **[@pfalcone](https://github.com/pfalcone)**
     * add initial support for RedHat-based distributions
+* **[@odeits](https://github.com/odeits)**
+    * initial implementation of source installation recipe
 
 
 ## License

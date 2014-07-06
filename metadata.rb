@@ -12,3 +12,5 @@ supports "ubuntu"
 supports "redhat"
 supports "centos"
 supports "fedora"
+
+suggests "build-essential"

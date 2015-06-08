@@ -6,3 +6,4 @@ vendor/bundle
 build/*
 .kitchen/
 *.lock
+.kitchen.local.yml

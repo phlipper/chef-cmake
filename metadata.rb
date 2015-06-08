@@ -14,3 +14,4 @@ supports "centos"
 supports "fedora"
 
 suggests "build-essential"
+suggests "git"

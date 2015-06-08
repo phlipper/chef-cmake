@@ -3,4 +3,5 @@
 # Attributes:: default
 #
 
-default["cmake"]["install_method"] = "package" # `package` or `source`
+# `package`, `source`, or `binary`
+default["cmake"]["install_method"] = "package"

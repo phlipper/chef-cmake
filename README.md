@@ -47,10 +47,13 @@ This cookbook installs the cmake components if not present, and pulls updates if
 ## Attributes
 
 ```ruby
-default["cmake"]["install_method"] = "package" # `package` or `source`
+default["cmake"]["install_method"] = "package" # `package`, `source`, or `binary`
 
-default["cmake"]["source"]["version"] = "2.8.12.2"
-default["cmake"]["source"]["checksum"] = "8c6574e9afabcb9fc66f463bb1f2f051958d86c85c37fccf067eb1a44a120e5e"
+default["cmake"]["source"]["version"] = "3.2.3"
+default["cmake"]["source"]["checksum"] = "e7be87a6cfc403785ab9d5846a70be2c27b17fda6a9b7442e9fc7af45c077d63"
+
+default["cmake"]["binary"]["version"] = "LATEST"
+default["cmake"]["binary"]["prefix"]  = "/usr/local"
 ```
 
 

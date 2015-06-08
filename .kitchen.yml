@@ -28,4 +28,13 @@ suites:
       cmake:
         install_method: source
         source:
-          version: 2.8.12.2
+          version: 3.2.3
+          checksum: "a1ebcaf6d288eb4c966714ea457e3b9677cdfde78820d0f088712d7320850297"
+  - name: binary
+    run_list:
+      - recipe[cmake]
+    attributes:
+      cmake:
+        install_method: binary
+        binary:
+          prefix: "/opt/local"
